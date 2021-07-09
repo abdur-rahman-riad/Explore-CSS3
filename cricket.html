@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket | Explore CSS3 with Riad</title>
+    <style>
+        .filed {
+            border: 2px solid teal;
+        }
+
+        .filed:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+            transition: transform 0.3s;
+        }
+
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: crimson;
+            position: relative;
+            left: 515px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="filed">
+        <img src="img/bat.png" class="bat">
+        <div class="ball"></div>
+    </div>
+
+</body>
+
+</html>

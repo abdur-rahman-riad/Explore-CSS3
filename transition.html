@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition | Explore CSS3 with Riad</title>
+    <style>
+        h1 {
+            color: darkmagenta;
+            text-align: center;
+        }
+
+        .box {
+            border: 2px solid #008080;
+            width: 250px;
+            height: 200px;
+            background-color: orangered;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: width 1s ease-in-out, height 1s ease-in-out, transform 1s;
+        }
+
+        .box:hover {
+            width: 500px;
+            height: 500px;
+            border-radius: 5px;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Transition in CSS3</h1>
+    <div class="box">
+        <h2>Box</h2>
+    </div>
+
+</body>
+
+</html>
